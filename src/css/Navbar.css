@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@400;700&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,300;1,400&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Mohave:wght@600&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@400;700&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,300;1,400&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Mohave:wght@600&family=Open+Sans:ital,wght@0,300;1,300&family=Oswald:wght@400;700&family=Poppins:ital,wght@1,600&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@1,300;1,400&family=Teko:wght@500&display=swap');
+
+:root {
+	--primaryColor: #f09d51;
+	--mainWhite: #fff;
+	--mainBlack: #222;
+	--mainGrey: #ececec;
+	--mainSpacing: 0.1rem;
+	--mainTransition: all 0.3s linear;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box ;
+
+}
+
+body{
+	color: var(--mainBlack);
+	background: var(--mainWhite);
+	font-family: 'Lato', sans-serif;
+
+}
+
+/*--------navbar--------*/
+.navbar{
+	position:sticky;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	display: flex;
+	align-items:center ;
+	background: rgba(255, 255, 255, 0.7);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 1;
+	letter-spacing: var(--mainSpacing);
+	font-family: 'Mochiy Pop One', sans-serif;
+	
+}
+
+.navbar-center{
+    width:100%; 
+    max-width: 1170px;
+    margin:0 auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem ;
+}
+
+ .nav-icon{ 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ .cart-btn{ 
+    position: relative;
+    cursor: pointer;
+}
+
+ .cart-items{ 
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30% ;
+    color: var(--mainWhite);
+}
+
+/*--------END of navbar--------*/
+
+
+

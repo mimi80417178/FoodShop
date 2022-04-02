@@ -1,0 +1,66 @@
+/*--------hero--------*/
+.hero{
+    min-height: 570px;/* min-height:calc(100vh - 60px); */
+    background: url('../../public/images/salad-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.banner{
+	text-align: center;
+	background: rgba(255, 255, 255,0.8);
+	display: inline-block;
+	padding: 2rem;
+	border-radius: 6px;
+	animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+  @keyframes move {
+    0% {
+      top: 20px;
+    }
+     
+    50% {
+      top: 30px;
+    }    
+    
+    100% {
+      top: 20px;
+    }
+  }
+
+.banner-title{
+	font-size: 3.4rem;
+	text-transform:uppercase ;
+	letter-spacing: var(--mainSpacing);
+	margin-bottom: 3rem;
+	font-family: 'Roboto Mono', monospace; 
+
+}
+
+.banner-btn{
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	letter-spacing: var(--mainSpacing);
+    font-size: 1rem;
+    background: var(--primaryColor);
+    color: #111;
+    border: 1px solid var(--primaryColor) ;
+    transition: var(--mainTransition);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+
+}
+
+.banner-btn:hover{
+    background: transparent;
+    color: var(--primaryColor);
+
+}
+/** END of hero--------*/

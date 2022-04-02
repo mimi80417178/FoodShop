@@ -1,0 +1,83 @@
+.productList-banner{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+ width: 100vw;
+ margin: 0 auto;
+ max-width: 1170px;
+ padding: 10px;
+}
+
+.itemsAll{ 
+ position: relative;
+ padding: 20px; 
+ margin: 10px;
+ background: #fff;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ border-radius: 6px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ overflow: hidden; 
+}
+
+.productImage{
+  position: relative;
+  width: 98%;
+  border-radius: 6px; 
+  border-bottom: 2px solid gray;
+  border-right: 2px solid gray; 
+  margin-bottom:10px;
+  transition: all 0.8s linear;  
+  height:180px;
+}
+
+.productText{
+  height: 70px;
+}
+
+.productText-tilte{
+  height: 30px;
+}
+
+ .itemsAll:hover .bagbtn{
+   transform: translateX(0);
+ }
+
+ .itemsAll:hover{
+    opacity: 0.8;
+ }
+ .productImage:hover{
+    transform:scale(1.1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+} 
+
+.adminBuEdit{
+  display: flex;  
+}
+
+#btn_buy{
+  color: black;
+  background: #f09d51;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: 600; 
+  width: 100px;
+  text-align: center;
+}
+
+#btn_Edit{
+  color: black;
+  background: #f09d51;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-left: 25px; 
+  width: 100px;
+  text-align: center; 
+  
+}
+button{
+  border: 0;
+}
+
